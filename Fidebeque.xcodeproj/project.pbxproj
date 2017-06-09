@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A2428FA133D95F38585AE1 /* Pods_Fidebeque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A13D52458AD891A2E2B243 /* Pods_Fidebeque.framework */; };
+		9C654DDBA9B764B00615DDA5 /* Pods_FidebequeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BC1F730D150FCCA3F7F49F /* Pods_FidebequeTests.framework */; };
 		C9415E5E1EEB15A400AA3603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */; };
 		C9415E601EEB15A400AA3603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E5F1EEB15A400AA3603 /* ViewController.swift */; };
 		C9415E631EEB15A400AA3603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9415E611EEB15A400AA3603 /* Main.storyboard */; };
 		C9415E651EEB15A400AA3603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9415E641EEB15A400AA3603 /* Assets.xcassets */; };
 		C9415E681EEB15A400AA3603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9415E661EEB15A400AA3603 /* LaunchScreen.storyboard */; };
 		C9415E731EEB15A400AA3603 /* FidebequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E721EEB15A400AA3603 /* FidebequeTests.swift */; };
+		C9415E7F1EEB171000AA3603 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1C7A6AA5CCF3BB374006CF /* Pods-FidebequeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FidebequeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FidebequeTests/Pods-FidebequeTests.release.xcconfig"; sourceTree = "<group>"; };
+		62BC1F730D150FCCA3F7F49F /* Pods_FidebequeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FidebequeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63A13D52458AD891A2E2B243 /* Pods_Fidebeque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fidebeque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900F317B81B5E6878237FB68 /* Pods-FidebequeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FidebequeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FidebequeTests/Pods-FidebequeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9415E5A1EEB15A400AA3603 /* Fidebeque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fidebeque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9415E5F1EEB15A400AA3603 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		C9415E6E1EEB15A400AA3603 /* FidebequeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidebequeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9415E721EEB15A400AA3603 /* FidebequeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidebequeTests.swift; sourceTree = "<group>"; };
 		C9415E741EEB15A400AA3603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.debug.xcconfig"; sourceTree = "<group>"; };
+		ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A2428FA133D95F38585AE1 /* Pods_Fidebeque.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C654DDBA9B764B00615DDA5 /* Pods_FidebequeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80D3D0733EABA5A075AC2533 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */,
+				ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */,
+				900F317B81B5E6878237FB68 /* Pods-FidebequeTests.debug.xcconfig */,
+				1E1C7A6AA5CCF3BB374006CF /* Pods-FidebequeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9415E511EEB15A400AA3603 = {
 			isa = PBXGroup;
 			children = (
 				C9415E5C1EEB15A400AA3603 /* Fidebeque */,
 				C9415E711EEB15A400AA3603 /* FidebequeTests */,
 				C9415E5B1EEB15A400AA3603 /* Products */,
+				80D3D0733EABA5A075AC2533 /* Pods */,
+				D094FBB43B418EBD1F91F25B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +102,11 @@
 		C9415E5C1EEB15A400AA3603 /* Fidebeque */ = {
 			isa = PBXGroup;
 			children = (
+				C9415E7D1EEB15B400AA3603 /* Supporting Files */,
 				C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */,
 				C9415E5F1EEB15A400AA3603 /* ViewController.swift */,
 				C9415E611EEB15A400AA3603 /* Main.storyboard */,
 				C9415E641EEB15A400AA3603 /* Assets.xcassets */,
-				C9415E661EEB15A400AA3603 /* LaunchScreen.storyboard */,
-				C9415E691EEB15A400AA3603 /* Info.plist */,
 			);
 			path = Fidebeque;
 			sourceTree = "<group>";
@@ -96,6 +120,25 @@
 			path = FidebequeTests;
 			sourceTree = "<group>";
 		};
+		C9415E7D1EEB15B400AA3603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9415E691EEB15A400AA3603 /* Info.plist */,
+				C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */,
+				C9415E661EEB15A400AA3603 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D094FBB43B418EBD1F91F25B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A13D52458AD891A2E2B243 /* Pods_Fidebeque.framework */,
+				62BC1F730D150FCCA3F7F49F /* Pods_FidebequeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9415E771EEB15A400AA3603 /* Build configuration list for PBXNativeTarget "Fidebeque" */;
 			buildPhases = (
+				91806193E644463E2CC590DE /* [CP] Check Pods Manifest.lock */,
 				C9415E561EEB15A400AA3603 /* Sources */,
 				C9415E571EEB15A400AA3603 /* Frameworks */,
 				C9415E581EEB15A400AA3603 /* Resources */,
+				1304517EE94D995E7A7DBFF1 /* [CP] Embed Pods Frameworks */,
+				66B778E8D58F1CE8D5EF5876 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9415E7A1EEB15A400AA3603 /* Build configuration list for PBXNativeTarget "FidebequeTests" */;
 			buildPhases = (
+				7FC42BAE424FB09D96A1491A /* [CP] Check Pods Manifest.lock */,
 				C9415E6A1EEB15A400AA3603 /* Sources */,
 				C9415E6B1EEB15A400AA3603 /* Frameworks */,
 				C9415E6C1EEB15A400AA3603 /* Resources */,
+				762F040AE0569306B3F33D4D /* [CP] Embed Pods Frameworks */,
+				A4DCB9412062C3EF22DF4CE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9415E681EEB15A400AA3603 /* LaunchScreen.storyboard in Resources */,
+				C9415E7F1EEB171000AA3603 /* GoogleService-Info.plist in Resources */,
 				C9415E651EEB15A400AA3603 /* Assets.xcassets in Resources */,
 				C9415E631EEB15A400AA3603 /* Main.storyboard in Resources */,
 			);
@@ -195,6 +245,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1304517EE94D995E7A7DBFF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66B778E8D58F1CE8D5EF5876 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		762F040AE0569306B3F33D4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FidebequeTests/Pods-FidebequeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FC42BAE424FB09D96A1491A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91806193E644463E2CC590DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DCB9412062C3EF22DF4CE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FidebequeTests/Pods-FidebequeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9415E561EEB15A400AA3603 /* Sources */ = {
@@ -339,12 +482,13 @@
 		};
 		C9415E781EEB15A400AA3603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = Fidebeque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ThoughtWorks.Fidebeque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.Fidebeque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -352,12 +496,13 @@
 		};
 		C9415E791EEB15A400AA3603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = Fidebeque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ThoughtWorks.Fidebeque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.Fidebeque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -365,6 +510,7 @@
 		};
 		C9415E7B1EEB15A400AA3603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900F317B81B5E6878237FB68 /* Pods-FidebequeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +526,7 @@
 		};
 		C9415E7C1EEB15A400AA3603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1C7A6AA5CCF3BB374006CF /* Pods-FidebequeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
