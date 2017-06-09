@@ -1,6 +1,6 @@
 //
-//  FidebequeTests.swift
-//  FidebequeTests
+//  CredentialsTests.swift
+//  Fidebeque
 //
 //  Created by Paulo Gama on 09/06/17.
 //  Copyright © 2017 Paulo Gama. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Fidebeque
 
-class FidebequeTests: XCTestCase {
+class CredentialsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,14 @@ class FidebequeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testEmail() {
+        let credentials = Credentials(email: "teste@teste.com", password: "12345678")
+        XCTAssertEqual("teste@teste.com", credentials.email, "Wrong e-mail")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testPassword() {
+        let credentials = Credentials(email: "test@tw.com", password: "senha")
+        XCTAssertEqual("senha", credentials.password, "Wrong password")
     }
     
 }

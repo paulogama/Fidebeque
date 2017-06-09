@@ -10,12 +10,13 @@
 		26A2428FA133D95F38585AE1 /* Pods_Fidebeque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A13D52458AD891A2E2B243 /* Pods_Fidebeque.framework */; };
 		9C654DDBA9B764B00615DDA5 /* Pods_FidebequeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BC1F730D150FCCA3F7F49F /* Pods_FidebequeTests.framework */; };
 		C9415E5E1EEB15A400AA3603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */; };
-		C9415E601EEB15A400AA3603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E5F1EEB15A400AA3603 /* ViewController.swift */; };
 		C9415E631EEB15A400AA3603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9415E611EEB15A400AA3603 /* Main.storyboard */; };
 		C9415E651EEB15A400AA3603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9415E641EEB15A400AA3603 /* Assets.xcassets */; };
 		C9415E681EEB15A400AA3603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9415E661EEB15A400AA3603 /* LaunchScreen.storyboard */; };
-		C9415E731EEB15A400AA3603 /* FidebequeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9415E721EEB15A400AA3603 /* FidebequeTests.swift */; };
 		C9415E7F1EEB171000AA3603 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */; };
+		C9E046FA1EEB30FF00EC3970 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046F91EEB30FF00EC3970 /* Credentials.swift */; };
+		C9E046FC1EEB31F200EC3970 /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */; };
+		C9E046FE1EEB3B2600EC3970 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +36,16 @@
 		900F317B81B5E6878237FB68 /* Pods-FidebequeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FidebequeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FidebequeTests/Pods-FidebequeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9415E5A1EEB15A400AA3603 /* Fidebeque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fidebeque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9415E5F1EEB15A400AA3603 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9415E621EEB15A400AA3603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9415E641EEB15A400AA3603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9415E671EEB15A400AA3603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9415E691EEB15A400AA3603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9415E6E1EEB15A400AA3603 /* FidebequeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidebequeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9415E721EEB15A400AA3603 /* FidebequeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidebequeTests.swift; sourceTree = "<group>"; };
 		C9415E741EEB15A400AA3603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9E046F91EEB30FF00EC3970 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
+		C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.debug.xcconfig"; sourceTree = "<group>"; };
 		ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,10 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */,
-				C9415E5F1EEB15A400AA3603 /* ViewController.swift */,
+				C9E046F91EEB30FF00EC3970 /* Credentials.swift */,
 				C9415E611EEB15A400AA3603 /* Main.storyboard */,
 				C9415E641EEB15A400AA3603 /* Assets.xcassets */,
 				C9415E7D1EEB15B400AA3603 /* Supporting Files */,
+				C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */,
 			);
 			path = Fidebeque;
 			sourceTree = "<group>";
@@ -114,8 +117,8 @@
 		C9415E711EEB15A400AA3603 /* FidebequeTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9415E721EEB15A400AA3603 /* FidebequeTests.swift */,
 				C9415E741EEB15A400AA3603 /* Info.plist */,
+				C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */,
 			);
 			path = FidebequeTests;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 					C9415E6D1EEB15A400AA3603 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 53QWD2UZM4;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C9415E591EEB15A400AA3603;
 					};
@@ -344,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9415E601EEB15A400AA3603 /* ViewController.swift in Sources */,
+				C9E046FA1EEB30FF00EC3970 /* Credentials.swift in Sources */,
+				C9E046FE1EEB3B2600EC3970 /* CredentialsViewController.swift in Sources */,
 				C9415E5E1EEB15A400AA3603 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9415E731EEB15A400AA3603 /* FidebequeTests.swift in Sources */,
+				C9E046FC1EEB31F200EC3970 /* CredentialsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,11 +519,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = FidebequeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoughtWorks.FidebequeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fidebeque.app/Fidebeque";
 			};
@@ -530,6 +537,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = FidebequeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

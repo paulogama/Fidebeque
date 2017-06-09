@@ -7,7 +7,7 @@ target 'Fidebeque' do
   target 'FidebequeTests' do
     inherit! :search_paths
 
-
+    pod 'Firebase'
 
   end
 
