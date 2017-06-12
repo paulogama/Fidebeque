@@ -17,6 +17,9 @@
 		C9E046FA1EEB30FF00EC3970 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046F91EEB30FF00EC3970 /* Credentials.swift */; };
 		C9E046FC1EEB31F200EC3970 /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */; };
 		C9E046FE1EEB3B2600EC3970 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */; };
+		C9E047001EEF3CC600EC3970 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FF1EEF3CC600EC3970 /* Constants.swift */; };
+		C9E047021EEF412800EC3970 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047011EEF412800EC3970 /* EventsViewController.swift */; };
+		C9E047041EEF466C00EC3970 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047031EEF466C00EC3970 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		C9E046F91EEB30FF00EC3970 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
 		C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
+		C9E046FF1EEF3CC600EC3970 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9E047011EEF412800EC3970 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		C9E047031EEF466C00EC3970 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.debug.xcconfig"; sourceTree = "<group>"; };
 		ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,10 +112,13 @@
 			children = (
 				C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */,
 				C9E046F91EEB30FF00EC3970 /* Credentials.swift */,
+				C9E046FF1EEF3CC600EC3970 /* Constants.swift */,
+				C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */,
+				C9E047031EEF466C00EC3970 /* Event.swift */,
+				C9E047011EEF412800EC3970 /* EventsViewController.swift */,
 				C9415E611EEB15A400AA3603 /* Main.storyboard */,
 				C9415E641EEB15A400AA3603 /* Assets.xcassets */,
 				C9415E7D1EEB15B400AA3603 /* Supporting Files */,
-				C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */,
 			);
 			path = Fidebeque;
 			sourceTree = "<group>";
@@ -351,6 +360,9 @@
 				C9E046FA1EEB30FF00EC3970 /* Credentials.swift in Sources */,
 				C9E046FE1EEB3B2600EC3970 /* CredentialsViewController.swift in Sources */,
 				C9415E5E1EEB15A400AA3603 /* AppDelegate.swift in Sources */,
+				C9E047001EEF3CC600EC3970 /* Constants.swift in Sources */,
+				C9E047041EEF466C00EC3970 /* Event.swift in Sources */,
+				C9E047021EEF412800EC3970 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +505,7 @@
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = Fidebeque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.Fidebeque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.Fidebeque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -507,7 +519,7 @@
 				DEVELOPMENT_TEAM = 53QWD2UZM4;
 				INFOPLIST_FILE = Fidebeque/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.Fidebeque;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.Fidebeque;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
