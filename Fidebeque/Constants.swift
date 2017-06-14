@@ -9,5 +9,8 @@
 import Foundation
 
 struct Constants {
-    static let homeSegue = "HomeSegue"
+    static let HOME_SEGUE = "HomeSegue"
+    static let EVENT_DETAILS_SEGUE = "EventDetailsSegue"
+    
+    static let EVENT_CELL = "EventCell"
 }

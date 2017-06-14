@@ -60,7 +60,7 @@ class CredentialsViewController: UIViewController {
     func login(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
             if user != nil && error == nil {
-                self?.performSegue(withIdentifier: Constants.homeSegue, sender: self)
+                self?.performSegue(withIdentifier: Constants.HOME_SEGUE, sender: self)
             } else {
                 self?.showErrorAlert(title: "Alerta", message: "Usuário e/ou senha inválidos")
             }
@@ -68,8 +68,8 @@ class CredentialsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == Constants.homeSegue {
-            if let eventsViewController = segue.destination as? EventsViewController {
+        if segue.identifier == Constants.HOME_SEGUE {
+            if let _ = segue.destination as? UINavigationController, let eventsViewController = segue.destination.childViewControllers[0] as? EventsViewController {
                 print(eventsViewController)
             }
         }
