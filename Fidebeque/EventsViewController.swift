@@ -49,11 +49,11 @@ class EventsViewController: UIViewController {
                     
                 }
                 
-                self.spinner.stopAnimating()
-                self.eventsTableView.isHidden = false
-                self.eventsTableView.reloadData()
-                
             }
+            
+            self.spinner.stopAnimating()
+            self.eventsTableView.isHidden = false
+            self.eventsTableView.reloadData()
             
         })
     }

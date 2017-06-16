@@ -60,6 +60,7 @@ class CredentialsViewController: UIViewController {
     func login(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] (user, error) in
             if user != nil && error == nil {
+                UserDefaults.standard.setValue(true, forKey: "isLogged")
                 self?.performSegue(withIdentifier: Constants.HOME_SEGUE, sender: self)
             } else {
                 self?.showErrorAlert(title: "Alerta", message: "Usuário e/ou senha inválidos")

@@ -11,12 +11,14 @@ import Firebase
 
 class Event {
     
+    var uid: String
     var title: String?
     var date: Date?
     var startHour: Date?
     var endHour: Date?
     
-    init(title: String, date: Date, startHour: Date, endHour: Date) {
+    init(uid: String, title: String, date: Date, startHour: Date, endHour: Date) {
+        self.uid = uid
         self.title = title
         self.date = date
         self.startHour = startHour
@@ -25,16 +27,19 @@ class Event {
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String: String] else { return nil }
+        let uid  = snapshot.key 
         guard let title  = dict["title"] else { return nil }
         guard let date = dict["date"] else { return nil }
         guard let startHour = dict["startHour"] else { return nil }
         guard let endHour = dict["endHour"] else { return nil }
         
+        self.uid = uid
         self.title = title
         self.date = date.toDate(dateFormat: "dd/MM/yy")
         self.startHour = startHour.toDate(dateFormat: "HH:mm")
         self.endHour = endHour.toDate(dateFormat: "HH:mm")
     }
+    
 }
 
 extension Date {

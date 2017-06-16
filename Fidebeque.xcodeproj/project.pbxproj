@@ -21,6 +21,7 @@
 		C9E047021EEF412800EC3970 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047011EEF412800EC3970 /* EventsViewController.swift */; };
 		C9E047041EEF466C00EC3970 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047031EEF466C00EC3970 /* Event.swift */; };
 		C9E047061EF1D06D00EC3970 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047051EF1D06D00EC3970 /* EventDetailsViewController.swift */; };
+		C9E047081EF41E3700EC3970 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E047071EF41E3700EC3970 /* Feedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C9E047011EEF412800EC3970 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C9E047031EEF466C00EC3970 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C9E047051EF1D06D00EC3970 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		C9E047071EF41E3700EC3970 /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		E0AF7703A64F05582ACBE8FB /* Pods-Fidebeque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.debug.xcconfig"; sourceTree = "<group>"; };
 		ECE2D57F59A74F8E4B0D5BBD /* Pods-Fidebeque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fidebeque.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fidebeque/Pods-Fidebeque.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				C9E047031EEF466C00EC3970 /* Event.swift */,
 				C9E047011EEF412800EC3970 /* EventsViewController.swift */,
 				C9E047051EF1D06D00EC3970 /* EventDetailsViewController.swift */,
+				C9E047071EF41E3700EC3970 /* Feedback.swift */,
 				C9415E611EEB15A400AA3603 /* Main.storyboard */,
 				C9415E641EEB15A400AA3603 /* Assets.xcassets */,
 				C9415E7D1EEB15B400AA3603 /* Supporting Files */,
@@ -366,6 +369,7 @@
 				C9415E5E1EEB15A400AA3603 /* AppDelegate.swift in Sources */,
 				C9E047001EEF3CC600EC3970 /* Constants.swift in Sources */,
 				C9E047041EEF466C00EC3970 /* Event.swift in Sources */,
+				C9E047081EF41E3700EC3970 /* Feedback.swift in Sources */,
 				C9E047021EEF412800EC3970 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
