@@ -180,11 +180,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fra-Bd-lYb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
-                                <color key="backgroundColor" red="1" green="0.25176611090384582" blue="0.45062487865486478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-A2-MP3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu feedback" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qDA-A2-MP3">
                                 <rect key="frame" x="0.0" y="637" width="375" height="30"/>
-                                <color key="backgroundColor" red="0.12871792561939277" green="1" blue="0.27923257589029804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
@@ -195,8 +194,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qDA-A2-MP3" firstAttribute="top" secondItem="fra-Bd-lYb" secondAttribute="bottom" id="2oQ-lO-5fy"/>
                             <constraint firstItem="fra-Bd-lYb" firstAttribute="top" secondItem="oR8-JP-sFK" secondAttribute="top" id="7ei-bl-kX6"/>
-                            <constraint firstItem="qDA-A2-MP3" firstAttribute="top" secondItem="fra-Bd-lYb" secondAttribute="bottom" id="8Wy-Xj-lHH"/>
                             <constraint firstAttribute="trailing" secondItem="fra-Bd-lYb" secondAttribute="trailing" id="Aya-pa-XVg"/>
                             <constraint firstItem="U9Q-Q0-m2c" firstAttribute="top" secondItem="qDA-A2-MP3" secondAttribute="bottom" id="CDu-ze-LoC"/>
                             <constraint firstItem="qDA-A2-MP3" firstAttribute="leading" secondItem="oR8-JP-sFK" secondAttribute="leading" id="Z55-Ky-whp"/>

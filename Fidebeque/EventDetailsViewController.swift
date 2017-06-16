@@ -25,7 +25,6 @@ class EventDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.title = event?.title
-        self.navigationItem.backBarButtonItem?.title = "tete"
     }
     
     deinit {
@@ -50,6 +49,9 @@ class EventDetailsViewController: UIViewController {
                                              width: feedbackTextField.frame.size.width,
                                              height: feedbackTextField.frame.size.height)
 
+            feedbackTableView.frame.size = CGSize(width: feedbackTableView.frame.size.width,
+                                                  height: feedbackTextField.frame.origin.y)
+            
             UIView.animate(withDuration: duration,
                            delay: TimeInterval(0),
                            options: animationCurve,
