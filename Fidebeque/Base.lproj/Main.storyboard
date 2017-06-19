@@ -155,7 +155,14 @@
                             <constraint firstItem="e73-LM-Px0" firstAttribute="top" secondItem="ddo-zV-PXw" secondAttribute="topMargin" id="wbt-ek-IJo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="z4I-LQ-Q2T"/>
+                    <navigationItem key="navigationItem" id="z4I-LQ-Q2T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ltq-40-0UF">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="75u-DO-qUl" kind="presentation" id="wmx-IQ-sgy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eventsTableView" destination="e73-LM-Px0" id="Jcp-GD-OAQ"/>
                         <outlet property="spinner" destination="oTL-ov-s2v" id="brc-LB-Qb7"/>
@@ -165,6 +172,137 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgM-li-19P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="37.331334332833585"/>
+        </scene>
+        <!--Novo Evento-->
+        <scene sceneID="Ge1-iA-38g">
+            <objects>
+                <viewController id="jD9-E3-bkK" customClass="AddEventViewController" customModule="Fidebeque" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dzj-8i-MbI"/>
+                        <viewControllerLayoutGuide type="bottom" id="2xV-3t-A8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xmj-t6-FCV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FoL-fF-k91">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jD9-E3-bkK" id="Bqk-Ki-dgo"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWJ-DP-99L">
+                                <rect key="frame" x="16" y="125" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="39G-O8-FXP">
+                                <rect key="frame" x="0.0" y="154" width="375" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="SEB-Md-zRk"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="519584160.97390199">
+                                    <!--2017-06-19 16:56:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora Início" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF2-1m-Cne">
+                                <rect key="frame" x="16" y="334" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0PD-N3-tbu"/>
+                                    <constraint firstAttribute="width" constant="105" id="Cn6-rn-gC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-Vm-V9P">
+                                <rect key="frame" x="0.0" y="375" width="180" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="IgH-Vo-fPa"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="519590932.84232402">
+                                    <!--2017-06-19 18:48:52 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora Fim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-c5-Xvt">
+                                <rect key="frame" x="254" y="334" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zw6-03-OQV">
+                                <rect key="frame" x="195" y="375" width="180" height="110"/>
+                                <date key="date" timeIntervalSinceReferenceDate="519590932.84232402">
+                                    <!--2017-06-19 18:48:52 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cy7-Vm-V9P" firstAttribute="leading" secondItem="Xmj-t6-FCV" secondAttribute="leading" id="1RC-5R-p1I"/>
+                            <constraint firstItem="zw6-03-OQV" firstAttribute="leading" secondItem="cy7-Vm-V9P" secondAttribute="trailing" constant="15" id="1Z0-UY-kg0"/>
+                            <constraint firstItem="39G-O8-FXP" firstAttribute="leading" secondItem="Xmj-t6-FCV" secondAttribute="leading" id="1ZV-Jn-tgU"/>
+                            <constraint firstItem="zw6-03-OQV" firstAttribute="height" secondItem="cy7-Vm-V9P" secondAttribute="height" id="2qm-fU-muG"/>
+                            <constraint firstItem="iF2-1m-Cne" firstAttribute="leading" secondItem="iWJ-DP-99L" secondAttribute="leading" id="5fB-kc-lle"/>
+                            <constraint firstItem="cy7-Vm-V9P" firstAttribute="top" secondItem="iF2-1m-Cne" secondAttribute="bottom" constant="20" id="8Fi-bs-c1c"/>
+                            <constraint firstItem="sOr-c5-Xvt" firstAttribute="height" secondItem="iF2-1m-Cne" secondAttribute="height" id="Ala-qt-KIg"/>
+                            <constraint firstItem="FoL-fF-k91" firstAttribute="trailing" secondItem="Xmj-t6-FCV" secondAttribute="trailingMargin" id="Q3I-Qf-Y6k"/>
+                            <constraint firstItem="iF2-1m-Cne" firstAttribute="top" secondItem="39G-O8-FXP" secondAttribute="bottom" constant="20" id="SAT-kj-eU1"/>
+                            <constraint firstItem="FoL-fF-k91" firstAttribute="leading" secondItem="Xmj-t6-FCV" secondAttribute="leadingMargin" id="Uil-4k-K8Z"/>
+                            <constraint firstItem="sOr-c5-Xvt" firstAttribute="trailing" secondItem="iWJ-DP-99L" secondAttribute="trailing" id="ZjL-S7-QuS"/>
+                            <constraint firstItem="sOr-c5-Xvt" firstAttribute="centerY" secondItem="iF2-1m-Cne" secondAttribute="centerY" id="e0Z-wy-hoa"/>
+                            <constraint firstItem="39G-O8-FXP" firstAttribute="top" secondItem="iWJ-DP-99L" secondAttribute="bottom" constant="8" id="h15-Wa-Nih"/>
+                            <constraint firstItem="sOr-c5-Xvt" firstAttribute="width" secondItem="iF2-1m-Cne" secondAttribute="width" id="hzI-a1-975"/>
+                            <constraint firstAttribute="trailing" secondItem="39G-O8-FXP" secondAttribute="trailing" id="jAE-hO-1zN"/>
+                            <constraint firstItem="iWJ-DP-99L" firstAttribute="width" secondItem="FoL-fF-k91" secondAttribute="width" id="jY2-gE-x9B"/>
+                            <constraint firstAttribute="trailing" secondItem="zw6-03-OQV" secondAttribute="trailing" id="jeo-ae-CIZ"/>
+                            <constraint firstItem="zw6-03-OQV" firstAttribute="width" secondItem="cy7-Vm-V9P" secondAttribute="width" id="lbg-a2-PC2"/>
+                            <constraint firstItem="FoL-fF-k91" firstAttribute="top" secondItem="dzj-8i-MbI" secondAttribute="bottom" constant="16" id="mBb-Sf-ruV"/>
+                            <constraint firstItem="iWJ-DP-99L" firstAttribute="top" secondItem="FoL-fF-k91" secondAttribute="bottom" constant="15" id="mEr-VS-Lra"/>
+                            <constraint firstItem="iWJ-DP-99L" firstAttribute="leading" secondItem="FoL-fF-k91" secondAttribute="leading" id="pq1-x1-iH9"/>
+                            <constraint firstItem="zw6-03-OQV" firstAttribute="centerY" secondItem="cy7-Vm-V9P" secondAttribute="centerY" id="xgo-m6-e1J"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XMD-Hf-uA5" appends="YES" id="Qe4-yJ-RSe"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Novo Evento" id="hSD-hn-nUs">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="iqr-k8-bms">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTouchCancel:" destination="jD9-E3-bkK" id="Q9w-ag-U2u"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="cqb-o7-qnb">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTouchSave:" destination="jD9-E3-bkK" id="4PM-7d-vIf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventDate" destination="39G-O8-FXP" id="rNP-ub-Gur"/>
+                        <outlet property="finalTime" destination="zw6-03-OQV" id="3Hq-9e-wii"/>
+                        <outlet property="initialTime" destination="cy7-Vm-V9P" id="ub5-yM-TKB"/>
+                        <outlet property="titleTextField" destination="FoL-fF-k91" id="FbX-16-Mma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rne-85-GPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XMD-Hf-uA5">
+                    <connections>
+                        <action selector="didTouchView:" destination="jD9-E3-bkK" id="8uK-HB-Gxq"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3512.8000000000002" y="-245.12743628185908"/>
         </scene>
         <!--Event Details View Controller-->
         <scene sceneID="r9B-QB-F1c">
@@ -250,7 +388,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="2574" y="412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xqe-YV-IBk">
@@ -269,6 +407,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztf-0P-ZzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840.79999999999995" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mUs-Nj-RDG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="75u-DO-qUl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GBV-fR-5K7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jD9-E3-bkK" kind="relationship" relationship="rootViewController" id="OOf-1f-yyk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMs-7N-jZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.5999999999999" y="-245.12743628185908"/>
         </scene>
     </scenes>
     <resources>

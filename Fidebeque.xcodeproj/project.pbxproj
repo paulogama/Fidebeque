@@ -14,6 +14,7 @@
 		C9415E651EEB15A400AA3603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9415E641EEB15A400AA3603 /* Assets.xcassets */; };
 		C9415E681EEB15A400AA3603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9415E661EEB15A400AA3603 /* LaunchScreen.storyboard */; };
 		C9415E7F1EEB171000AA3603 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */; };
+		C99FE8C01EF8380100FFB905 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99FE8BF1EF8380100FFB905 /* AddEventViewController.swift */; };
 		C9E046FA1EEB30FF00EC3970 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046F91EEB30FF00EC3970 /* Credentials.swift */; };
 		C9E046FC1EEB31F200EC3970 /* CredentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */; };
 		C9E046FE1EEB3B2600EC3970 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */; };
@@ -48,6 +49,7 @@
 		C9415E6E1EEB15A400AA3603 /* FidebequeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FidebequeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9415E741EEB15A400AA3603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9415E7E1EEB171000AA3603 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C99FE8BF1EF8380100FFB905 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		C9E046F91EEB30FF00EC3970 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		C9E046FB1EEB31F200EC3970 /* CredentialsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsTests.swift; sourceTree = "<group>"; };
 		C9E046FD1EEB3B2600EC3970 /* CredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		C9415E5C1EEB15A400AA3603 /* Fidebeque */ = {
 			isa = PBXGroup;
 			children = (
+				C99FE8BF1EF8380100FFB905 /* AddEventViewController.swift */,
 				C9415E5D1EEB15A400AA3603 /* AppDelegate.swift */,
 				C9E046F91EEB30FF00EC3970 /* Credentials.swift */,
 				C9E046FF1EEF3CC600EC3970 /* Constants.swift */,
@@ -370,6 +373,7 @@
 				C9E047001EEF3CC600EC3970 /* Constants.swift in Sources */,
 				C9E047041EEF466C00EC3970 /* Event.swift in Sources */,
 				C9E047081EF41E3700EC3970 /* Feedback.swift in Sources */,
+				C99FE8C01EF8380100FFB905 /* AddEventViewController.swift in Sources */,
 				C9E047021EEF412800EC3970 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

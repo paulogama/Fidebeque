@@ -14,4 +14,6 @@ struct Constants {
     
     static let EVENT_CELL = "EventCell"
     static let FEEDBACK_CELL = "FeedbackCell"
+    
+    static let NEW_EVENT_NOTIFICATION = "NEW_EVENT_NOTIFICATION"
 }

@@ -40,13 +40,20 @@ class Event {
         self.endHour = endHour.toDate(dateFormat: "HH:mm")
     }
     
+    func save(reference ref: DatabaseReference) {
+        ref.child("channels").childByAutoId().setValue(["title": self.title,
+                                                        "date": self.date?.toString(dateFormat: "dd/MM/yyyy"),
+                                                        "startHour": self.startHour?.toString(dateFormat: "HH:mm"),
+                                                        "endHour": self.endHour?.toString(dateFormat: "HH:mm")])
+    }
+    
 }
 
 extension Date {
     
-    func toString() -> String {
+    func toString(dateFormat: String) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
+        dateFormatter.dateFormat = dateFormat
         return dateFormatter.string(from: self)
     }
 

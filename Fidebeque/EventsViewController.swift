@@ -27,6 +27,11 @@ class EventsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        NotificationCenter.default.addObserver(self,
+                                                     selector: #selector(fetchEvents),
+                                                     name: NSNotification.Name(rawValue: Constants.NEW_EVENT_NOTIFICATION),
+                                                     object: nil)
+
         fetchEvents()
     }
 
@@ -86,7 +91,7 @@ extension EventsViewController: UITableViewDataSource {
         let event = eventsArray[indexPath.row]
         
         cell.textLabel?.text = event.title
-        cell.detailTextLabel?.text = event.date?.toString()
+        cell.detailTextLabel?.text = event.date?.toString(dateFormat: "dd-MM-yyyy")
         
         return cell
     }
